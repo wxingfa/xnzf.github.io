@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>js-实现新年祝福</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div class="box">
+			<h1>身体健康</h1>
+			<h3>(点击下方按钮即可随机获取新年祝福语)</h3>
+		</div>
+		
+		<button>获取祝福语</button>
+		
+		
+		<script>
+			
+			var  btns = document.querySelector("button");
+			
+			
+			var  h1 = document.querySelector("h1");
+			
+			
+			const zhufu = ["身体健康","平安如意","万事顺意","吉祥如意","恭喜发财","健康长寿","永远快乐","幸福安康","大吉大顺","大吉大利","你永远最棒","我喜欢你"];
+			
+			function SetZhufu(arr) {
+				return arr[Math.floor(Math.random() * arr.length)]
+			}
+			
+			btns.onclick = function() {
+				// console.log(SetZhufu(zhufu))
+				
+				h1.innerText = SetZhufu(zhufu)
+			}
+			
+		</script>
+	</body>
+</html>

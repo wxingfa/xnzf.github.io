@@ -1,0 +1,55 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #c6070c;
+}
+
+@font-face{
+	src: url("../fonts/pinyin (1).ttf");
+	font-family: "pinyin1";
+}
+
+@font-face{
+	src: url("../fonts/pinyin (2).ttf");
+	font-family: "pinyin2";
+}
+
+
+
+.box {
+	text-align: center;
+	color: #ffe392;
+	margin-top: 230px;
+}
+
+.box h1 {
+	font-size: 150px;
+	font-family: pinyin1;
+	margin-bottom: 50px;
+}
+
+.box h3 {
+	font-size: 80px;
+}
+
+button {
+	width: 230px;
+	height: 60px;
+	border-radius: 6px;
+	background-color: #ef941a;
+	color: #fff;
+	font-size: 23px;
+	border: transparent;
+	display: block;
+	margin: 40px  auto;
+}
+
+button:hover {
+	transition: all .3s;
+	cursor: pointer;
+	box-shadow: 1px 1px 1px slategray;
+}
